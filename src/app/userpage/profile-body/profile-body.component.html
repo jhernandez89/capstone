@@ -1,0 +1,309 @@
+<div class="container-fluid myPadding">
+  <div class="row profileContent">
+    <div class="col-sm-6">
+      <div class="panel shadowDiv">
+        <div>
+          <h2>Current Projects</h2>
+          <hr>
+          <div id="exTab2">
+            <ul class="nav nav-pills" *ngIf="!toggleCurrentProjects">
+              <li class="noMargin">
+                <a class="allExistingProjects" tabindex="1" (click)="pickCurrentProjects()" data-toggle="tab">All Projects</a>
+              </li>
+              <li class="noMargin">
+                <a class="existingProjectTabs" autofocus tabindex="1" (click)="allCurrentProjects()" data-toggle="tab">By Type</a>
+              </li>
+            </ul>
+            <ul class="nav nav-pills" *ngIf="toggleCurrentProjects">
+              <li class="noMargin">
+                <a class="existingProjectTabsReverse" tabindex="1" (click)="pickCurrentProjects()" data-toggle="tab">All Projects</a>
+              </li>
+              <li class="noMargin">
+                <a class="allExistingProjectsReverse" tabindex="1" (click)="allCurrentProjects()" data-toggle="tab">By Type</a>
+              </li>
+            </ul>
+            <div class="tab-content clearfix">
+              <div *ngIf="currentAllOrSome">
+                <ul>
+                  <div class="bulletPoints">
+                    <i class="fa fa-university" aria-hidden="true"></i>
+                    <li>
+
+                      &nbsp; &nbsp; Do iguanas feel love?
+                    </li>
+                    <div class="editDeleteButton">
+                      <p><button class="btn btn-xs editButton" data-title="Edit" data-toggle="modal" data-target="#edit" data-placement="top"
+                          rel="tooltip"><span class="glyphicon glyphicon-pencil"></span></button></p>
+                    </div>
+                    <div class="editDeleteButton">
+                      <p><button class="btn btn-xs deleteButton" data-title="Delete" data-toggle="modal" data-target="#delete"
+                          data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-trash"></span></button></p>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <div *ngIf="!currentAllOrSome">
+                <ul>
+                  <div class="bulletPoints">
+                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                    <a href="#">
+                      <li>
+
+                        &nbsp; &nbsp; Narrative &nbsp;
+                      </li>
+                      <div class="expandCategories">
+                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="bulletPoints">
+                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                    <li>
+
+                      &nbsp; &nbsp; Ethnography &nbsp;
+                    </li>
+                    <div class="expandCategories">
+                      <i class="fa fa-plus-square" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="bulletPoints">
+                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                    <li>
+
+                      &nbsp; &nbsp; Phenomenological &nbsp;
+                    </li>
+                    <div class="expandCategories">
+                      <i class="fa fa-plus-square" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="bulletPoints">
+                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                    <li>
+
+                      &nbsp; &nbsp; Grounded Theory &nbsp;
+                    </li>
+                    <div class="expandCategories">
+                      <i class="fa fa-plus-square" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="bulletPoints">
+                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                    <li>
+
+                      &nbsp; &nbsp; Case Study &nbsp;
+                    </li>
+                    <div class="expandCategories">
+                      <i class="fa fa-plus-square" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="panel shadowDiv">
+        <div>
+          <h2>New Project Fast Track</h2>
+          <p>Don't know what to choose? Click the button above to get some help choosing the right one for your project</p>
+          <hr>
+          <p>
+            <div id="exTab1">
+              <ul class="nav nav-pills" *ngIf="listTreeView">
+                <li class="noMargin">
+                  <a class="unselectedProject" tabindex="1" (click)="allProjects()" data-toggle="tab">Tree View</a>
+                </li>
+                <li class="noMargin">
+                  <a class="newProjectTabs" tabindex="1" (click)="pickProject()" data-toggle="tab">List View</a>
+                </li>
+              </ul>
+              <ul class="nav nav-pills" *ngIf="!listTreeView">
+                <li class="noMargin">
+                  <a class="newProjectTabsReverse" tabindex="1" (click)="allProjects()" data-toggle="tab">Tree View</a>
+                </li>
+                <li class="noMargin">
+                  <a class="unselectedProjectReverse" tabindex="1" (click)="pickProject()" data-toggle="tab">List View</a>
+                </li>
+              </ul>
+              <div class="tab-content clearfix">
+                <div *ngIf="allOrSome">
+                  <ul>
+                    <div class="bulletPoints">
+                      <i class="fa fa-university" aria-hidden="true"></i>
+                      <li>
+
+                        &nbsp; &nbsp; A thing
+                      </li>
+                      <div class="editDeleteButton">
+                        <p><button class="btn btn-xs editButton" data-title="Edit" data-toggle="modal" data-target="#edit" data-placement="top"
+                            rel="tooltip"><span class="glyphicon glyphicon-pencil"></span></button></p>
+                      </div>
+                      <div class="editDeleteButton">
+                        <p><button class="btn btn-xs deleteButton" data-title="Delete" data-toggle="modal" data-target="#delete"
+                            data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-trash"></span></button></p>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+                <div *ngIf="!allOrSome">
+                  <ul>
+                    <!--<div class="bulletPoints">
+                      <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                      <li>
+
+                        &nbsp; &nbsp; Narrative &nbsp;
+                      </li>
+                      <div class="expandCategories">
+                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                      </div>
+
+                    </div>-->
+                    <!--
+                      <ul class="subFastTrackCategories">
+                        <li >hello</li>
+                      </ul>
+                      <br>-->
+                    <div class="bulletPoints">
+                      <a class="newProjectLinks" (click)="toggleNarrative()">
+                      <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                      <li>
+
+                        &nbsp; &nbsp; Narratives &nbsp;
+                      </li>
+                      <div class="expandCategories">
+                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                      </div>
+                      </a>
+                    </div>
+                    <div *ngIf="narrative">
+                      <ul class="subFastTrackCategories">
+                        <div>
+                          <a routerLink="/research/interviews">
+                            <li class="fa fa-rocket"> Interview</li>
+                          </a>
+                        </div>
+                        <br>
+                        <div>
+                          <li class="fa fa-rocket"> Written word</li>
+                        </div>
+                      </ul>
+                      <br>
+                      <br>
+                    </div>
+                    <div class="bulletPoints">
+                      <a class="newProjectLinks" (click)="toggleEthnography()">
+                      <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                      <li>
+
+                        &nbsp; &nbsp; Ethnography &nbsp;
+                      </li>
+                      <div class="expandCategories">
+                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                      </div>
+                      </a>
+                    </div>
+                    <div *ngIf="ethnography">
+                      <ul class="subFastTrackCategories">
+                        <li class="fa fa-rocket"> Interview</li>
+                        <br>
+                        <li class="fa fa-rocket"> Written word</li>
+                      </ul>
+                      <br>
+                      <br>
+                    </div>
+                    <div class="bulletPoints">
+                      <a class="newProjectLinks" (click)="togglePhenomenology()">
+                      <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                        <li>
+
+                          &nbsp; &nbsp; Phenomenology &nbsp;
+                        </li>
+                        <div class="expandCategories">
+                          <i class="fa fa-plus-square" aria-hidden="true"></i>
+                        </div>
+                      </a>
+                    </div>
+                    <div *ngIf="phenomenology">
+                      <ul class="subFastTrackCategories">
+                        <li class="fa fa-rocket"> Interview</li>
+                        <br>
+                        <li class="fa fa-rocket"> Written word</li>
+                      </ul>
+                      <br>
+                      <br>
+                    </div>
+                    <div class="bulletPoints" (click)="toggleGroundedTheory()">
+                      <a class="newProjectLinks">
+                      <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                      <li>
+
+                        &nbsp; &nbsp; Grounded Theory &nbsp;
+                      </li>
+                      <div class="expandCategories">
+                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                      </div>
+                      </a>
+                    </div>
+                    <div *ngIf="groundedTheory">
+                      <ul class="subFastTrackCategories">
+                        <li class="fa fa-rocket"> Interview</li>
+                        <br>
+                        <li class="fa fa-rocket"> Written word</li>
+                      </ul>
+                      <br>
+                      <br>
+                    </div>
+                    <div class="bulletPoints" (click)="toggleCaseStudy()">
+                      <a class="newProjectLinks">
+                      <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                      <li>
+
+                        &nbsp; &nbsp; Case Study &nbsp;
+                      </li>
+                      <div class="expandCategories">
+                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                      </div>
+                      </a>
+                    </div>
+                    <div *ngIf="caseStudy">
+                      <ul class="subFastTrackCategories">
+                        <li class="fa fa-rocket"> Interview</li>
+                        <br>
+                        <li class="fa fa-rocket"> Written word</li>
+                      </ul>
+                      <br>
+                      <br>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--<hr>
+          <ul>
+            <div class="bulletPoints">
+              <i class="fa fa-university" aria-hidden="true"></i>
+              <li>
+
+                &nbsp; &nbsp; A thing
+              </li>
+              <div class="editDeleteButton">
+                <p><a href="#" class="btn btn-default startButton">Start!</a></p>
+              </div>
+            </div>
+            <div class="bulletPoints">
+              <i class="fa fa-university" aria-hidden="true"></i>
+              <li>
+                &nbsp; &nbsp; Another thing
+              </li>
+              <div class="editDeleteButton">
+                <p><a href="#" class="btn btn-default startButton">Start!</a></p>
+              </div>
+            </div>
+          </ul>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

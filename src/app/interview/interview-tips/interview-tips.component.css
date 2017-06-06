@@ -1,0 +1,13 @@
+.tipsBackground {
+    background-color: white;
+    padding-right: 5%;
+    padding-bottom: 100%;
+    border: 4px solid rgb(51, 14, 34); 
+    border-radius: 14px;
+}
+ul {
+  list-style-type: none;
+}
+.myPadding {
+    padding: 5%;
+}

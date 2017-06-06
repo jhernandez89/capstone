@@ -1,0 +1,88 @@
+.flexBoxing {
+  display: flex;
+  justify-content: center;
+}
+
+.allTypes {
+  border-top: 25px solid rgb(0, 107, 107);
+  border-right: 4px solid rgb(0, 107, 107);
+  border-left: 4px solid rgb(0, 107, 107);
+  border-bottom: 4px solid rgb(0, 107, 107);
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  border-top-right-radius: 14px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.myPadding {
+  margin-top: 4%;
+}
+
+.leftButtonPadding {
+  padding-right: 0;
+  padding-left: 0;
+  background-color: white;
+}
+
+.middleButtonPadding {
+  padding-right: 0;
+  padding-left: 0;
+  background-color: white;
+}
+
+.rightButtonPadding {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: white;
+}
+
+.firstButtonPadding {
+  border-top-left-radius: 14px;
+}
+
+.thirdButtonPadding {
+  border-top-right-radius: 14px;
+}
+
+.squares {
+  border-top: 6px solid rgb(0, 107, 107);
+  border-right: 6px solid rgb(0, 107, 107);
+  border-left: 6px solid rgb(0, 107, 107);
+}
+
+.squares1 {
+  background-color: rgb(0, 107, 107);
+  color: white;
+  padding: 1%;
+  text-align: center;
+}
+
+.squares2 {
+  color: black;
+  padding: 1%;
+  text-align: center;
+}
+
+.squares2:hover {
+  background-color: rgb(0, 107, 107);
+  color: white;
+  padding: 1%;
+  text-align: center;
+}
+
+a {
+  cursor: pointer;
+}
+
+.makeItFlex {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-left: 12%;
+  padding-top: 3%;
+}
+
+.headContainer {
+  width: 500px;
+}

@@ -1,0 +1,10 @@
+.myPadding {
+  display: flex;
+  width: 80%;
+  text-align: center;
+  margin-top: 2%;
+}
+#main {
+    transition: margin-left .5s;
+    margin-left: 162px;
+}

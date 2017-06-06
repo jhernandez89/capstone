@@ -1,0 +1,97 @@
+<div class="container myPadding" *ngIf="unstructured">
+  <div class="row">
+    <div class="col-lg-2">
+      <app-interview-tips> </app-interview-tips>
+    </div>
+    <div class="row justify-content-end">
+      <div class="col-md-2 leftButtonPadding">
+        <a (click)="changeToUnstructured()">
+          <div class="squares1 squares firstButtonPadding">
+            <h4>Unstructured</h4>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-2 middleButtonPadding">
+        <a (click)="changeToSemistructured()">
+          <div class="squares2 squares secondButtonPadding">
+            <h4>Semi-structured</h4>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-2 rightButtonPadding">
+        <a (click)="changeToStructured()">
+          <div class="squares2 squares thirdButtonPadding">
+            <h4>Structured</h4>
+          </div>
+        </a>
+      </div>
+      <app-unstructured-interview></app-unstructured-interview>
+    </div>
+  </div>
+</div>
+
+
+<div class="container myPadding" *ngIf="semistructured">
+  <div class="row">
+    <div class="col-lg-2">
+      <app-interview-tips> </app-interview-tips>
+    </div>
+    <div class="row justify-content-end">
+      <div class="col-md-2 leftButtonPadding">
+        <a (click)="changeToUnstructured()">
+          <div class="squares2 squares firstButtonPadding">
+            <h4>Unstructured</h4>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-2 middleButtonPadding">
+        <a (click)="changeToSemistructured()">
+          <div class="squares1 squares secondButtonPadding">
+            <h4>Semi-structured</h4>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-2 rightButtonPadding">
+        <a (click)="changeToStructured()">
+          <div class="squares2 squares thirdButtonPadding">
+            <h4>Structured</h4>
+          </div>
+        </a>
+      </div>
+      <app-semi-structured-interview></app-semi-structured-interview>
+    </div>
+  </div>
+</div>
+
+
+<div class="container myPadding" *ngIf="structured">
+  <div class="row">
+    <div class="col-lg-2">
+      <app-interview-tips> </app-interview-tips>
+    </div>
+    <div class="row justify-content-end">
+      <div class="col-md-2 leftButtonPadding">
+        <a (click)="changeToUnstructured()">
+          <div class="squares2 squares firstButtonPadding">
+            <h4>Unstructured</h4>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-2 middleButtonPadding">
+        <a (click)="changeToSemistructured()">
+          <div class="squares2 squares secondButtonPadding">
+            <h4>Semi-structured</h4>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-2 rightButtonPadding">
+        <a (click)="changeToStructured()">
+          <div class="squares1 squares thirdButtonPadding">
+            <h4>Structured</h4>
+          </div>
+        </a>
+      </div>
+     <app-structured-interview></app-structured-interview>
+    </div>
+  </div>
+</div>

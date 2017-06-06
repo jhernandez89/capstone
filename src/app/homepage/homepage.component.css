@@ -1,0 +1,246 @@
+.whiteboards {
+  background-color: white;
+  transform: scale(1.0);
+  -webkit-filter: drop-shadow(1.5px 1.5px 1.5px #222);
+  filter: drop-shadow(1.5px 1.5px 1.5px #222);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.takeHeight {
+  height: 80vh;
+}
+
+.firstBox {
+  float: right;
+  height: 40vh;
+  width: 44vw;
+}
+#greyItUp {
+    background-color: rgb(230, 230, 230);
+}
+
+#textLeft {
+  text-align: left;
+  color: black;
+}
+.bulletPoints{
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+  height: 15%;
+}
+
+.myPadding {
+  display: flex;
+  width: 80%;
+  text-align: center;
+}
+
+.shadowDiv {
+  transform: scale(1.0);
+  -webkit-filter: drop-shadow(1.5px 1.5px 1.5px #222);
+  filter: drop-shadow(1.5px 1.5px 1.5px #222);
+  border-radius: 14px;
+  padding: 3%;
+}
+
+.another {
+  margin-bottom: 30%
+}
+
+.secondBox {
+  float: right;
+  height: 40vh;
+  width: 15vw;
+  margin-top: 4%;
+  margin-right: 30%;
+  /*width: 100%;*/
+  /*height: 0;*/
+  /*padding-top: 30.64%;*/
+}
+
+.thirdBox {
+  height: 40vh;
+  width: 22vw;
+  margin-top: 0%;
+  margin-left: 24%;
+}
+
+.studyDesk {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+}
+
+.centerElement {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.fancyBackground {
+  /*height: 40vh;
+  width: 44vw;
+  margin-top: 4%;
+  margin-left: -19%;
+  overflow: hidden;
+  padding: 0;*/
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+}
+
+#whiteText {
+  color: black;
+}
+
+.outerBox {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#textOver {
+  color: black;
+}
+
+.innerBox {
+  padding: 20px;
+  text-align: center;
+  align-content: center;
+}
+
+.newProject {
+  margin-top: 20%;
+}
+
+.text-center {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.whiteboardHoriz {
+  border-radius: 25px;
+  margin-top: 1%;
+  width: 100vw;
+  height: 100vh;
+}
+
+fancyBackground h2 {
+  color: rgb(2, 40, 89);
+  word-wrap: break-word;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  width: 60%;
+  /* Set the hr color */
+  color: grey;
+  /* old IE */
+  background-color: grey;
+  /* Modern Browsers */
+}
+
+p {
+  font-size: 20px;
+}
+
+ul {
+  font-size: 20px;
+}
+
+.btn-sample {
+  width: 50%;
+  color: #ffffff;
+  background-color: #0378a0;
+  border-color: #000000;
+}
+
+.btn-sample:hover,
+.btn-sample:focus,
+.btn-sample:active,
+.btn-sample.active,
+.open .dropdown-toggle.btn-sample {
+  color: #ffffff;
+  background-color: #013e52;
+  border-color: #000000;
+}
+
+.btn-sample:active,
+.btn-sample.active,
+.open .dropdown-toggle.btn-sample {
+  background-image: none;
+}
+
+.btn-sample.disabled,
+.btn-sample[disabled],
+fieldset[disabled] .btn-sample,
+.btn-sample.disabled:hover,
+.btn-sample[disabled]:hover,
+fieldset[disabled] .btn-sample:hover,
+.btn-sample.disabled:focus,
+.btn-sample[disabled]:focus,
+fieldset[disabled] .btn-sample:focus,
+.btn-sample.disabled:active,
+.btn-sample[disabled]:active,
+fieldset[disabled] .btn-sample:active,
+.btn-sample.disabled.active,
+.btn-sample[disabled].active,
+fieldset[disabled] .btn-sample.active {
+  background-color: #1E18C7;
+  border-color: #000000;
+}
+
+.btn-sample .badge {
+  color: #1E18C7;
+  background-color: #ffffff;
+}
+
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+#footer {
+    border-top: 5px solid #CDB380;
+    background: #033649 none repeat scroll 0% 0%;
+    padding-top: 30px;
+    margin-top: 60px;
+    clear: both;
+    color: #AAA;
+    display: block;
+}
+
+#footer .widgettitle {
+    margin: 0px;
+    padding: 0px 0px 15px;
+    border-bottom: medium none;
+}
+#footer h4 {
+    color: #FFF;
+}
+
+#footer ul {
+    list-style: outside none none;
+}
+
+#footer li {
+    padding: 7px 0px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+    margin: 0px;
+}
+
+#footer li a {
+    color: #DDD;
+}
+
+#sub-floor {
+    color: #AAA;
+    background: #031634 none repeat scroll 0% 0%;
+    padding: 10px 0px;
+}
+
