@@ -1,18 +1,18 @@
-.middleButtonPadding {
+/*.middleButtonPadding {
   padding-right: 0;
   padding-left: 0;
   background-color: white;
-}
+}*/
 
 .allTypes {
   border-top: 25px solid rgb(0, 107, 107);
-  border-right: 4px solid rgb(0, 107, 107);
-  border-left: 4px solid rgb(0, 107, 107);
+  /*border-right: 4px solid rgb(0, 107, 107);*/
+  /*border-left: 4px solid rgb(0, 107, 107);*/
   border-bottom: 4px solid rgb(0, 107, 107);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
   border-top-right-radius: 14px;
-  padding-top: 30px;
+  /*padding-top: 30px;*/
   padding-bottom: 30px;
 }
 
@@ -22,19 +22,34 @@ p {
 
 .watchMeFlex {
   display: flex !important;
-  align-content: center;
+  align-items: center;
   text-align: center;
-  justify-content: center;
+  justify-content: space-around;
   /*justify-content: center;*/
   /*align-content: flex-start;*/
 }
 
+.formattingQuestionFlex {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
 .choiceButton {
   /*display: flex !important;*/
+  display: flex;
   justify-content: center;
   ;
 }
-
+button {
+    vertical-align: text-bottom;
+}
+.stuffCenter {
+    align-content: center !important;
+}
+.alignMiddle {
+    text-align: center;
+}
 h3 {
   color: rgb(3%, 33.5%, 33.4%);
   line-height: 200%;
@@ -65,8 +80,9 @@ img {
 .questionsToConsider.h2 {
   color: rgb(14%, 12.2%, 12.2%);
 }
+
 .marginBottom {
-      margin-bottom: 6%;
+  margin-bottom: 6%;
 }
 
 .questionsToConsider {
@@ -89,29 +105,95 @@ img {
   font-weight: bold;
   font-size: 30px;
 }
-.questionBorder {
+
+.questionDescription {
+  text-align: left;
+  float: left;
+}
+
+.smallP {
+  font-size: 15px;
+}
+
+.questionRightBorder {
   border-top: 25px solid rgb(1, 62, 82);
   border-right: 4px solid rgb(1, 62, 82);
   border-left: 4px solid rgb(1, 62, 82);
   border-bottom: 4px solid rgb(1, 62, 82);
+  float: right;
 }
+
+.questionLeftBorder {
+  border-top: 25px solid rgb(1, 62, 82);
+  border-right: 4px solid rgb(1, 62, 82);
+  border-left: 4px solid rgb(1, 62, 82);
+  border-bottom: 4px solid rgb(1, 62, 82);
+  float: left;
+  padding: 5%;
+}
+
+.float-right {
+  display: flex;
+  float: right;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.float-middle {
+  display: flex;
+  justify-content: center;
+}
+
 p {
-    font-size: 20px;
+  font-size: 20px;
 }
+
 .blueTwo {
   color: rgb(16, 102, 163);
   font-weight: bold;
   font-size: 25px;
 }
+
 .blueNoSize {
   color: rgb(16, 102, 163);
   font-weight: bold;
 }
+
+.text-align-center {
+  text-align: center;
+}
+
 .purpleNoSize {
   color: purple;
   font-weight: bold;
 }
+
 .redNoSize {
   color: rgb(54.5%, 0%, 0%);
   font-weight: bold;
+}
+
+.headContainer {
+  padding-left: 15%;
+  padding-right: 15%;
+  float: right;
+}
+
+hr {
+  border-color: teal;
+  background-color: teal;
+}
+
+.questionPadding {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+
+.tipPadding {
+  padding: 1%;
+}
+
+.leadingQuestion {
+  padding: 2%;
 }

@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./semi-structured-overview-body.component.css']
 })
 export class SemiStructuredOverviewBodyComponent implements OnInit {
-  unstructured = true;
-  semistructured = false;
+  unstructured = false;
+  semistructured = true;
   structured = false;
   constructor() { }
 
