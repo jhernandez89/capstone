@@ -9,7 +9,6 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { NavComponent } from './homepage/nav/nav.component';
 import { UserpageComponent } from './userpage/userpage.component';
 import { GeneralNavComponent } from './userpage/general-nav/general-nav.component';
-import { BioComponent } from './userpage/bio/bio.component';
 import { ProfileBodyComponent } from './userpage/profile-body/profile-body.component';
 import { AllResearchComponent } from './all-research/all-research.component';
 import { InterviewComponent } from './interview/interview.component';
@@ -44,7 +43,6 @@ const appRoutes: Routes = [
     NavComponent,
     UserpageComponent,
     GeneralNavComponent,
-    BioComponent,
     ProfileBodyComponent,
     AllResearchComponent,
     InterviewComponent,
