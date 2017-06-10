@@ -1,0 +1,14 @@
+.profilePictureParent {
+padding-left: 30%;
+padding-right: 30%;
+}
+.topBottomPadding {
+    padding-top: 6%;;
+}
+.personalizedButton{    
+  background-color: rgb(0, 100, 80);
+  color: white;
+}
+.whiteBackground {
+    background-color: white;
+}

@@ -1,24 +1,26 @@
-/*.middleButtonPadding {
-  padding-right: 0;
-  padding-left: 0;
-  background-color: white;
-}*/
+.middleButtonPadding {
+  padding-left: 15%;
+  padding-top: 3%;
+  /*background-color: white;*/
+}
 
 .allTypes {
-  border-top: 25px solid rgb(0, 107, 107);
+  /*border-top: 25px solid rgb(0, 107, 107);*/
   /*border-right: 4px solid rgb(0, 107, 107);*/
   /*border-left: 4px solid rgb(0, 107, 107);*/
-  border-bottom: 4px solid rgb(0, 107, 107);
-  border-bottom-left-radius: 14px;
-  border-bottom-right-radius: 14px;
-  border-top-right-radius: 14px;
+  /*border-bottom: 4px solid rgb(0, 107, 107);*/
+  /*border-bottom-left-radius: 14px;*/
+  /*border-bottom-right-radius: 14px;*/
+  /*border-top-right-radius: 14px;*/
   /*padding-top: 30px;*/
   padding-bottom: 30px;
 }
-
-p {
-  font-size: 18px;
+.pageTitle {
+  color: #1c3d61;;
 }
+/*p {
+  font-size: 18px;
+}*/
 
 .watchMeFlex {
   display: flex !important;
@@ -50,8 +52,8 @@ button {
 .alignMiddle {
     text-align: center;
 }
-h3 {
-  color: rgb(3%, 33.5%, 33.4%);
+h4 {
+  /*color: rgb(3%, 33.5%, 33.4%);*/
   line-height: 200%;
 }
 
@@ -110,24 +112,27 @@ img {
   text-align: left;
   float: left;
 }
+.tabPadding {
+  margin-right: 30vw;
+}
 
 .smallP {
   font-size: 15px;
 }
 
 .questionRightBorder {
-  border-top: 25px solid rgb(1, 62, 82);
-  border-right: 4px solid rgb(1, 62, 82);
-  border-left: 4px solid rgb(1, 62, 82);
-  border-bottom: 4px solid rgb(1, 62, 82);
+  border-top: 25px solid #1c3d61;
+  border-right: 4px solid #1c3d61;
+  border-left: 4px solid #1c3d61;
+  border-bottom: 4px solid #1c3d61;
   float: right;
 }
 
 .questionLeftBorder {
-  border-top: 25px solid rgb(1, 62, 82);
-  border-right: 4px solid rgb(1, 62, 82);
-  border-left: 4px solid rgb(1, 62, 82);
-  border-bottom: 4px solid rgb(1, 62, 82);
+  border-top: 25px solid #1c3d61;
+  border-right: 4px solid #1c3d61;
+  border-left: 4px solid #1c3d61;
+  border-bottom: 4px solid #1c3d61;
   float: left;
   padding: 5%;
 }
@@ -142,10 +147,6 @@ img {
 .float-middle {
   display: flex;
   justify-content: center;
-}
-
-p {
-  font-size: 20px;
 }
 
 .blueTwo {
@@ -188,6 +189,8 @@ hr {
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 5%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .tipPadding {
@@ -196,4 +199,10 @@ hr {
 
 .leadingQuestion {
   padding: 2%;
+}
+.testFlex {
+  padding: 3.2%;
+}
+.titleLine {
+  margin-top: 0;
 }

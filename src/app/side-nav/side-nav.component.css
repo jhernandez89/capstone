@@ -34,10 +34,10 @@
 
 #main {
     transition: margin-left .5s;
-    margin-left: 162px;
+    margin-left: 84px;
 }
 #mySidenav {
-    width: 162px;
+    width: 84px;
 }
 
 @media screen and (max-height: 450px) {

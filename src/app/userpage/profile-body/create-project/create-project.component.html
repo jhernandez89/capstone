@@ -1,0 +1,164 @@
+<div class="container-fluid">
+  <div class="row paddingSpace">
+    <div class="col-sm-12 d-flex justify-content-center">
+      <h3>You haven't created any projects yet!</h3>
+    </div>
+  </div>
+  <hr>
+  <div class="row paddingSpace">
+    <div class="col-sm-5">
+      <img class="img-fluid" src="../../assets/images/booksAndBoxes.jpg" alt="bookShelves">
+      <h6>"If we were knew what we were doing it wouldn't be called research"</h6>
+    </div>
+    <div class="col-sm-7">
+      <h4 class="d-flex justify-content-center">Get started!</h4>
+      <p>Choose form one of the research categories below or get started from scratch</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 d-flex justify-content-center">
+            <a routerLink="/user" class="btn btn-default personalizedButton">From scartch</a>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div *ngIf="!allOrSome">
+                    <ul>
+                      <div class="bulletPoints">
+                        <a class="newProjectLinks d-flex flex-row" (click)="toggleNarrative()">
+                          <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                          <li>
+                          &nbsp; &nbsp; Narratives &nbsp;
+                          </li>
+                          <div class="expandCategories">
+                            <i class="fa fa-plus-square" aria-hidden="true"></i>
+                          </div>
+                        </a>
+                      </div>
+                      <div *ngIf="narrative">
+                        <ul class="subFastTrackCategories">
+                          <div>
+                            <a routerLink="/research/interviews">
+                              <li class="fa fa-rocket"> Interview</li>
+                            </a>
+                          </div>
+                          <br>
+                          <div>
+                            <li class="fa fa-rocket"> Written word</li>
+                          </div>
+                        </ul>
+                        <br>
+                        <br>
+                      </div>
+                      <div class="bulletPoints">
+                        <a class="newProjectLinks d-flex flex-row" (click)="toggleEthnography()">
+                        <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                        <li>
+                          &nbsp; &nbsp; Ethnography &nbsp;
+                        </li>
+                        <div class="expandCategories">
+                          <i class="fa fa-plus-square" aria-hidden="true"></i>
+                        </div>
+                        </a>
+                      </div>
+                      <div *ngIf="ethnography">
+                        <ul class="subFastTrackCategories">
+                          <li class="fa fa-rocket"> Interview</li>
+                          <br>
+                          <li class="fa fa-rocket"> Written word</li>
+                        </ul>
+                        <br>
+                        <br>
+                      </div>
+                      <div class="bulletPoints">
+                        <a class="newProjectLinks d-flex flex-row" (click)="togglePhenomenology()">
+                      <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                        <li>
+
+                          &nbsp; &nbsp; Phenomenology &nbsp;
+                        </li>
+                        <div class="expandCategories">
+                          <i class="fa fa-plus-square" aria-hidden="true"></i>
+                        </div>
+                      </a>
+                      </div>
+                      <div *ngIf="phenomenology">
+                        <ul class="subFastTrackCategories">
+                          <li class="fa fa-rocket"> Interview</li>
+                          <br>
+                          <li class="fa fa-rocket"> Written word</li>
+                        </ul>
+                        <br>
+                        <br>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div *ngIf="!allOrSome">
+                    <ul>
+                      <div class="bulletPoints" (click)="toggleGroundedTheory()">
+                        <a class="newProjectLinks d-flex flex-row">
+                      <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                      <li>
+
+                        &nbsp; &nbsp; Grounded Theory &nbsp;
+                      </li>
+                      <div class="expandCategories">
+                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                      </div>
+                      </a>
+                      </div>
+                      <div *ngIf="groundedTheory">
+                        <ul class="subFastTrackCategories">
+                          <li class="fa fa-rocket"> Interview</li>
+                          <br>
+                          <li class="fa fa-rocket"> Written word</li>
+                        </ul>
+                        <br>
+                        <br>
+                      </div>
+                      <div class="bulletPoints" (click)="toggleCaseStudy()">
+                        <a class="newProjectLinks d-flex flex-row">
+                      <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                      <li>
+
+                        &nbsp; &nbsp; Case Study &nbsp;
+                      </li>
+                      <div class="expandCategories">
+                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                      </div>
+                      </a>
+                      </div>
+                      <div *ngIf="caseStudy">
+                        <ul class="subFastTrackCategories">
+                          <li class="fa fa-rocket"> Interview</li>
+                          <br>
+                          <li class="fa fa-rocket"> Written word</li>
+                        </ul>
+                        <br>
+                        <br>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row featuredArticle">
+    <app-featured-article></app-featured-article>
+  </div>
+</div>
