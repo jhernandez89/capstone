@@ -1,4 +1,12 @@
-#main {
-    transition: margin-left .5s;
-    margin-left: 162px;
+.container-fluid {
+  padding-top: 5%;
+  /*margin-left: 0 !important;
+  padding-left: 0 !important;
+  margin-right: 0 !important;*/
+  margin-right: 10% !important;
+}
+
+.whiteBackground {
+  background-color: white;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
