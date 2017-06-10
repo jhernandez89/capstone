@@ -6,6 +6,23 @@
   border-radius: 14px;
   padding: 20px;
 }
+.btn-default {
+  color: white;
+}
+/*
+body {
+  background-image: url("../../assets/images/landingBackgroundTwo.jpg");
+background-size: cover;
+}*/
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.white {
+  color: white;
+}
+
 
 .takeHeight {
   height: 80vh;
@@ -14,29 +31,57 @@
 .firstBox {
   float: right;
   height: 40vh;
-  width: 44vw;
-}
-#greyItUp {
-    background-color: rgb(230, 230, 230);
+  width: 50vw;
 }
 
+#greyItUp {
+  background-color: white;
+  padding-top: 5%;
+}
+.personalizedButton{
+  margin-top: 2%;
+  background-color: rgb(0, 100, 80);
+
+}
 #textLeft {
   text-align: left;
   color: black;
 }
-.bulletPoints{
-    display: flex;
-    align-items: center;
-}
 
+.bulletPoints {
+  display: flex;
+  align-items: center;
+}
+h4 {
+  color: white;
+}
+.noPadding {
+  padding: 0;
+}
 .logo {
   height: 15%;
 }
 
+h2 {
+  color: white;
+    padding-bottom: 2%;
+  
+}
+.middlePadding {
+  padding-right: 5%;
+}
+.lowerRowPadding {
+  padding-top: 4%;
+  padding-left: 2%;
+}
 .myPadding {
   display: flex;
-  width: 80%;
+  /*width: 80%;*/
   text-align: center;
+  padding-top: 0%;
+  background-image: url("../../assets/images/landingBackgroundTwo.jpg");
+  background-size: cover;
+  height:100vh;
 }
 
 .shadowDiv {
@@ -132,7 +177,7 @@
   height: 100vh;
 }
 
-fancyBackground h2 {
+fancyBackground{
   color: rgb(2, 40, 89);
   word-wrap: break-word;
 }
@@ -147,7 +192,10 @@ hr {
   background-color: grey;
   /* Modern Browsers */
 }
-
+.rightPadding {
+  padding-right: 5%;
+  padding-left: 5%;
+}
 p {
   font-size: 20px;
 }
@@ -204,43 +252,42 @@ fieldset[disabled] .btn-sample.active {
 }
 
 @import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
-
 #footer {
-    border-top: 5px solid #CDB380;
-    background: #033649 none repeat scroll 0% 0%;
-    padding-top: 30px;
-    margin-top: 60px;
-    clear: both;
-    color: #AAA;
-    display: block;
+  border-top: 5px solid #CDB380;
+  background: #033649 none repeat scroll 0% 0%;
+  padding-top: 30px;
+  margin-top: 60px;
+  clear: both;
+  color: #AAA;
+  display: block;
 }
 
 #footer .widgettitle {
-    margin: 0px;
-    padding: 0px 0px 15px;
-    border-bottom: medium none;
+  margin: 0px;
+  padding: 0px 0px 15px;
+  border-bottom: medium none;
 }
+
 #footer h4 {
-    color: #FFF;
+  color: #FFF;
 }
 
 #footer ul {
-    list-style: outside none none;
+  list-style: outside none none;
 }
 
 #footer li {
-    padding: 7px 0px;
-    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
-    margin: 0px;
+  padding: 7px 0px;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+  margin: 0px;
 }
 
 #footer li a {
-    color: #DDD;
+  color: #DDD;
 }
 
 #sub-floor {
-    color: #AAA;
-    background: #031634 none repeat scroll 0% 0%;
-    padding: 10px 0px;
+  color: #AAA;
+  background: #031634 none repeat scroll 0% 0%;
+  padding: 10px 0px;
 }
-

@@ -4,19 +4,24 @@
 }
 
 .allTypes {
-  border-top: 25px solid rgb(0, 107, 107);
-  /*border-right: 4px solid rgb(0, 107, 107);*/
-  /*border-left: 4px solid rgb(0, 107, 107);*/
-  border-bottom: 4px solid rgb(0, 107, 107);
+  /*border-top: 25px solid #426892;*/
+  /*border-right: 4px solid #426892;*/
+  /*border-left: 4px solid #426892;*/
+  /*border-bottom: 4px solid #426892;*/
   /*border-bottom-left-radius: 14px;*/
   /*border-bottom-right-radius: 14px;*/
   /*border-top-right-radius: 14px;*/
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.test {
+  background-color: white;
+}
 
-.myPadding {
-  margin-top: 4%;
+#sidePadding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  
 }
 .container {
     width: 1170px;
@@ -24,9 +29,10 @@
 
 .leftButtonPadding {
   padding-right: 0;
-  padding-left: 0;
   background-color: white;
+  padding-bottom: 0;
 }
+.tabLowerBar {}
 
 .middleButtonPadding {
   padding-right: 0;
@@ -38,26 +44,27 @@
   padding-left: 0;
   padding-right: 0;
   background-color: white;
+  
 }
 
 .firstButtonPadding {
-  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
 }
 
 .thirdButtonPadding {
-  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
 }
 
 .squares {
-  border-top: 6px solid rgb(0, 107, 107);
-  border-right: 6px solid rgb(0, 107, 107);
-  border-left: 6px solid rgb(0, 107, 107);
-  border-bottom: 6px solid rgb(0, 107, 107);
+  border-top: 6px solid #426892;
+  border-right: 6px solid #426892;
+  border-left: 6px solid #426892;
+  border-bottom: 6px solid #426892;
 
 }
 
 .squares1 {
-  background-color: rgb(0, 107, 107);
+  background-color: #426892;
   color: white;
   padding: 1%;
   text-align: center;
@@ -70,7 +77,7 @@
 }
 
 .squares2:hover {
-  background-color: rgb(0, 107, 107);
+  background-color: #426892;
   color: white;
   padding: 1%;
   text-align: center;

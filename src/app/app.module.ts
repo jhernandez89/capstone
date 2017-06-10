@@ -23,6 +23,10 @@ import { OverviewSemiStructuredInterviewComponent } from './interview/overview-s
 import { SemiStructuredOverviewBodyComponent } from './interview/overview-semi-structured-interview/semi-structured-overview-body/semi-structured-overview-body.component';
 import { SemiStructuredOverviewTabComponent } from './interview/overview-semi-structured-interview/semi-structured-overview-body/semi-structured-overview-tab/semi-structured-overview-tab.component';
 import { SemiStructuredQuestionFormatComponent } from './interview/overview-semi-structured-interview/semi-structured-overview-body/semi-structured-question-format/semi-structured-question-format.component';
+import { LowerNavComponent } from './lower-nav/lower-nav.component';
+import { UserBioComponent } from './userpage/profile-body/user-bio/user-bio.component';
+import { CreateProjectComponent } from './userpage/profile-body/create-project/create-project.component';
+import { FeaturedArticleComponent } from './userpage/profile-body/create-project/featured-article/featured-article.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomepageComponent },
@@ -54,6 +58,10 @@ const appRoutes: Routes = [
     SemiStructuredOverviewBodyComponent,
     SemiStructuredOverviewTabComponent,
     SemiStructuredQuestionFormatComponent,
+    LowerNavComponent,
+    UserBioComponent,
+    CreateProjectComponent,
+    FeaturedArticleComponent,
   ],
   imports: [
     BrowserModule,

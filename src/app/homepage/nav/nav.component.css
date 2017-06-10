@@ -1,115 +1,73 @@
-body {
-  background-color: rgb(230, 230, 230);
-  font-family: 'Noto Serif', serif;
-    /*background-image: url("../assets/images/study.jpg");*/
-
+.navbar {
+  background-color: rgba(0, 5, 99, 0.7);
 }
-.navbar-nav > li > a {padding-top:40px !important; padding-bottom:40px !important;}
-.navbar {min-height:32px !important}
-
-#logo {
-  font-size: 70px;
-  color: white;
-  font-family: 'Merriweather', serif;
-  text-decoration: underline;
-  }
-  
-.navContain {
-  display: flex;
-
-  padding-left: 20%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-.myHeader {
-  display: flex;
-  flex-direction: row;
-}
-.verticalLine {
-  align-self: stretch;
-  /*width: 0px;*/
-  border-right: thick solid black;
-  padding-right: 25%;
-}
-ul {
-  list-style-type: none;
-}
-.myIcons {
-  font-size: 50px;
-}
-#tagLine {
-  color: white;
-  margin-left: 7%;
-}
-.navbar-default {
-  background-color: rgb(3,120,160);
-  /*border-color: #013e52;*/
-}
-.navbar-default .navbar-brand {
+.navbar .navbar-brand {
   color: #ffffff;
 }
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
   color: #ffffff;
 }
-.navbar-default .navbar-text {
+.navbar .navbar-text {
   color: #ffffff;
 }
-.navbar-default .navbar-nav > li > a {
+.navbar .navbar-nav .nav-link {
+  color: #ffffff;
+  border-radius: .25rem;
+  margin: 0 0.25em;
+}
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus {
   color: #ffffff;
 }
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+  color: #ffffff;
+  background-color: #142c40;
+}
+.navbar .navbar-toggle {
+  border-color: #142c40;
+}
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+  background-color: #142c40;
+}
+.navbar .navbar-toggle .navbar-toggler-icon {
   color: #ffffff;
 }
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #ffffff;
-  background-color: #013e52;
-}
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-  color: #ffffff;
-  background-color: #013e52;
-}
-.navbar-default .navbar-toggle {
-  /*border-color: #013e52;*/
-}
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: #013e52;
-}
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #ffffff;
-}
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
+.navbar .navbar-collapse,
+.navbar .navbar-form {
   border-color: #ffffff;
 }
-.navbar-default .navbar-link {
+.navbar .navbar-link {
   color: #ffffff;
 }
-.navbar-default .navbar-link:hover {
+.navbar .navbar-link:hover {
   color: #ffffff;
 }
 
 @media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  .navbar .navbar-nav .open .dropdown-menu .dropdown-item {
     color: #ffffff;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+  .navbar .navbar-nav .open .dropdown-menu .dropdown-item:hover,
+  .navbar .navbar-nav .open .dropdown-menu .dropdown-item:focus {
     color: #ffffff;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  .navbar .navbar-nav .open .dropdown-menu .dropdown-item.active {
     color: #ffffff;
-    background-color: #013e52;
+    background-color: #142c40;
   }
 }
-p {
-  font-size: 16px;
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:4px !important; 
+    padding-bottom:0 !important;
+    height: 28px;
+}
+a {
+  font-size: 90%;
 }
