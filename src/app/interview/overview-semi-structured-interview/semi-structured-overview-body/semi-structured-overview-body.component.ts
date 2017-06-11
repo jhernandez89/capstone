@@ -16,5 +16,4 @@ export class SemiStructuredOverviewBodyComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
