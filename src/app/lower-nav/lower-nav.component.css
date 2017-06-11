@@ -1,6 +1,22 @@
 .clickable {
-    cursor: pointer;
+  cursor: pointer;
 }
+
 .padding {
-    padding: 1.5%;
+  padding: 1.5%;
+}
+
+.activeTab {
+  color: blue;
+  border-bottom: 3px solid blue;
+}
+
+a {
+  color: black;
+}
+h6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

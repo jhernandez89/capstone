@@ -1,5 +1,5 @@
 import { Router } from '@angular/router';
-import { UserServiceService } from './../user-service.service';
+import { UserServiceService, userState } from './../user-service.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,13 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LowerNavComponent implements OnInit {
   currentState = 'home';
+  userState = {interviewType: 'unstructured', semiStructuredTabs: 'overview'}
   constructor(private userStateService: UserServiceService, private router: Router) {
+    this.userStateService.observable.subscribe(userService => {
+      this.userState = userService;
+    })
     this.router.events.subscribe(navRouter => {this.currentState = navRouter['url']});
   }
 
   ngOnInit() {
   }
   setInterviewType(type) {
+    console.log(type);
     this.userStateService.setInterviewTypes(type)
   }
   semiStructureType(type) {

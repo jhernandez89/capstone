@@ -13,3 +13,6 @@ ul {
 .featuredArticle {
     padding-left: 5%;
 }
+a {
+  cursor: pointer;
+}
