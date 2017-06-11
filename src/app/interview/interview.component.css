@@ -1,9 +1,5 @@
-.container-fluid {
-  padding-top: 5%;
-  /*margin-left: 0 !important;
-  padding-left: 0 !important;
-  margin-right: 0 !important;*/
-  margin-right: 10% !important;
+.sideNav {
+  position: fixed;
 }
 
 .whiteBackground {

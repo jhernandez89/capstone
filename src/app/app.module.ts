@@ -1,3 +1,4 @@
+import { UserServiceService } from './user-service.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -22,10 +23,10 @@ import { OverviewSemiStructuredInterviewComponent } from './interview/overview-s
 import { SemiStructuredOverviewBodyComponent } from './interview/overview-semi-structured-interview/semi-structured-overview-body/semi-structured-overview-body.component';
 import { SemiStructuredOverviewTabComponent } from './interview/overview-semi-structured-interview/semi-structured-overview-body/semi-structured-overview-tab/semi-structured-overview-tab.component';
 import { SemiStructuredQuestionFormatComponent } from './interview/overview-semi-structured-interview/semi-structured-overview-body/semi-structured-question-format/semi-structured-question-format.component';
-import { LowerNavComponent } from './lower-nav/lower-nav.component';
 import { UserBioComponent } from './userpage/profile-body/user-bio/user-bio.component';
 import { CreateProjectComponent } from './userpage/profile-body/create-project/create-project.component';
 import { FeaturedArticleComponent } from './userpage/profile-body/create-project/featured-article/featured-article.component';
+import { LowerNavComponent } from './lower-nav/lower-nav.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomepageComponent },
@@ -56,10 +57,10 @@ const appRoutes: Routes = [
     SemiStructuredOverviewBodyComponent,
     SemiStructuredOverviewTabComponent,
     SemiStructuredQuestionFormatComponent,
-    LowerNavComponent,
     UserBioComponent,
     CreateProjectComponent,
     FeaturedArticleComponent,
+    LowerNavComponent,
   ],
   imports: [
     BrowserModule,
@@ -67,7 +68,7 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [UserServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

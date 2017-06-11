@@ -1,3 +1,4 @@
+import { UserServiceService } from './../../../user-service.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,26 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./semi-structured-overview-body.component.css']
 })
 export class SemiStructuredOverviewBodyComponent implements OnInit {
-  unstructured = false;
-  semistructured = true;
-  structured = false;
-  constructor() { }
+  tabState = {semiStructuredTabs: 'overview'}
+  constructor(private userService: UserServiceService) {
+    this.userService.observable.subscribe(userService => {
+      this.tabState = userService;
+    })
+   }
 
   ngOnInit() {
   }
-  changeToUnstructured() {
-    this.unstructured = true;
-    this.semistructured = false;
-    this.structured = false;
-  }
-  changeToSemistructured() {
-    this.unstructured = false;
-    this.semistructured = true;
-    this.structured = false;
-  }
-  changeToStructured() {
-    this.unstructured = false;
-    this.semistructured = false;
-    this.structured = true;
-  }
+
 }

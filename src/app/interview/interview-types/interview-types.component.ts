@@ -1,3 +1,4 @@
+import { UserServiceService } from './../../user-service.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,27 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./interview-types.component.css']
 })
 export class InterviewTypesComponent implements OnInit {
-  unstructured = true;
-  semistructured = false;
-  structured = false;
-  constructor() { }
-
+  userState = {interviewType: 'unstructured'}
+  constructor(private userService: UserServiceService) {
+    this.userService.observable.subscribe(userService => {
+      this.userState = userService
+    });
+   }
   ngOnInit() {
-  }
-  changeToUnstructured() {
-    this.unstructured = true;
-    this.semistructured = false;
-    this.structured = false;
-  }
-  changeToSemistructured() {
-    this.unstructured = false;
-    this.semistructured = true;
-    this.structured = false;
-  }
-  changeToStructured() {
-    this.unstructured = false;
-    this.semistructured = false;
-    this.structured = true;
   }
 
 }

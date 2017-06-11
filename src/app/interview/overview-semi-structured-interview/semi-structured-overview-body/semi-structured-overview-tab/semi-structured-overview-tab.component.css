@@ -1,89 +1,23 @@
-/*.middleButtonPadding {
-  padding-right: 0;
-  padding-left: 0;
-}*/
+.middleButtonPadding {
+  padding-left: 15%;
+}
 
 .allTypes {
-  border-top: 25px solid rgb(0, 107, 107);/
-  border-bottom-left-radius: 14px;
-  border-bottom-right-radius: 14px;
-  border-top-right-radius: 14px;
-  padding-top: 30px;
   padding-bottom: 30px;
+}
+hr {
+  border-color: teal;
+  background-color: teal;
+  width: 100%;
+}
+
+.questionPadding {
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 5%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-p {
-  font-size: 18px;
-}
-
-.watchMeFlex {
-  display: flex !important;
-  align-content: center;
-  text-align: center;
-  justify-content: center;
-  /*justify-content: center;*/
-  /*align-content: flex-start;*/
-}
-
-.choiceButton {
-  /*display: flex !important;*/
-  justify-content: center;
-  ;
-}
-
-h3 {
-  color: rgb(3%, 33.5%, 33.4%);
-  line-height: 200%;
-}
-
-.purple {
-  color: purple;
-  font-weight: bold;
-  font-size: 25px;
-}
-
-.red {
-  color: rgb(54.5%, 0%, 0%);
-  font-weight: bold;
-  font-size: 25px;
-}
-
-.blue {
-  display: flex;
-  justify-content: center;
-  color: rgb(18%, 41.9%, 54.5%)
-}
-
-img {
-  float: right;
-}
-
-.questionsToConsider.h2 {
-  color: rgb(14%, 12.2%, 12.2%);
-}
-.marginBottom {
-      margin-bottom: 6%;
-}
-
-.questionsToConsider {
-  border: 4px solid rgb(0, 107, 107);
-  border-radius: 14px;
-}
-
-#outterVertCenter {
-  height: 400px;
-  display: flex;
-  /* flex-direction: column;*/
-  align-items: center;
-  /* justify-content: center;*/
-}
-
-#innerVertCenter {}
-
-.bigRed {
-  color: rgb(54.5%, 0%, 0%);
-  font-weight: bold;
-  font-size: 30px;
+.tabTopPadding {
+  padding: 3.2%;
 }
