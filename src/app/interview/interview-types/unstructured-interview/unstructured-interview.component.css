@@ -1,28 +1,7 @@
-.middleButtonPadding {
-    padding-right: 0;
-    padding-left: 0;
-    background-color: white;
+.topPadding {
+    padding-top: 5%;
 }
-.allTypes {
-  border-top: 25px solid rgb(0, 107, 107);
-  border-right: 4px solid rgb(0, 107, 107);
-  border-left: 4px solid rgb(0, 107, 107);
-  border-bottom: 4px solid rgb(0, 107, 107);
-  border-bottom-left-radius: 14px;
-  border-bottom-right-radius: 14px;
-  border-top-right-radius: 14px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-p {
-    font-size: 18px;
-}
-.watchMeFlex {
-    display: flex !important;
-    /*justify-content: center;*/
-    align-content: flex-start;
-}
-.choiceButton {
-    /*display: flex !important;*/
-    justify-content: center;;
+.btn-default {
+    background-color: rgb(139, 0, 0);
+    color: white;
 }

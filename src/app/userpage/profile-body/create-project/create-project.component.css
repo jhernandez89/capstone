@@ -6,9 +6,6 @@ ul {
   list-style-type: none;
   padding-left: 0 !important;
 }
-a {
-    cursor: pointer;
-}
 .personalizedButton{    
   background-color: rgb(139, 0, 0);
   color: white;

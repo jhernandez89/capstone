@@ -83,9 +83,6 @@
   text-align: center;
 }
 
-a {
-  cursor: pointer;
-}
 
 .makeItFlex {
   display: flex;

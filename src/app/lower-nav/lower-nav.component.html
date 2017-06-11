@@ -1,16 +1,22 @@
-<div class="container-fluid lowerNav">
+<div class="container-fluid" *ngIf="currentState==='/research/interviews'">
   <div class="row">
-    <div class="col-sm-3">
-      <h2>RSG</h2>
+    <div class="col-sm-2">
     </div>
-    <div class="col-sm-3">
-      Profile
+    <div class="col-sm-6 d-flex flex-row justify-content-between align-items-center padding">
+      <h6 class="clickable" (click)="setInterviewType('unstructured')">Unstructured</h6>
+      <h6 class="clickable" (click)="setInterviewType('semiStructured')">Semi-Structured</h6>
+      <h6 class="clickable" (click)="setInterviewType('structured')">Structured</h6>
     </div>
-    <div class="col-sm-3">
-      Research Projects
+  </div>
+</div> 
+<div class="container-fluid" *ngIf="currentState==='/research/interviews/semi-structured'">
+  <div class="row">
+    <div class="col-sm-2">
     </div>
-    <div class="col-sm-3"> 
-      Other thing
+    <div class="col-sm-6 d-flex flex-row justify-content-between align-items-center padding">
+      <h6 class="clickable" (click)="semiStructureType('overview')">Overview</h6>
+      <h6 class="clickable" (click)="semiStructureType('questions')">Questions</h6>
+      <h6 class="clickable" (click)="semiStructureType('other')">Formatting</h6>
     </div>
   </div>
 </div>

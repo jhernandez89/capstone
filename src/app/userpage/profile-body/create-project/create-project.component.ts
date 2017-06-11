@@ -1,3 +1,5 @@
+import { UserServiceService } from './../../../user-service.service';
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -13,8 +15,8 @@ export class CreateProjectComponent implements OnInit {
   ethnography = false;
   caseStudy = false
   groundedTheory = false;
-
-  constructor() { }
+  allOrSome = false;
+  constructor(private userStateService: UserServiceService) { }
 
   ngOnInit() {
   }
