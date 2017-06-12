@@ -14,7 +14,7 @@ export class UserServiceService {
   constructor(private http: Http) {
     this.userState = new BehaviorSubject({
       interviewType: 'unstructured',
-      semiStructuredTabs: 'create',
+      semiStructuredTabs: 'overview',
       lowerNavType: 'profile',
     });
    }

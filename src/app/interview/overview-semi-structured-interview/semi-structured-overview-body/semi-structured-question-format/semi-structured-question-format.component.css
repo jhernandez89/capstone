@@ -179,3 +179,10 @@ hr {
 .titleLine {
   margin-top: 0;
 }
+a {
+  cursor: pointer;
+}
+.selectedTab, .selectedTab:first-child, .selectedTab:first-child:hover {
+  color: green;
+  border-bottom: 2px solid green; 
+}

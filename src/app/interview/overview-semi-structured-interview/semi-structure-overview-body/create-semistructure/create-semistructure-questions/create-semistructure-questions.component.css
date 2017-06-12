@@ -1,0 +1,17 @@
+.btn-default {
+    color: white !important;
+    background-color: green;
+    cursor: pointer;
+}
+.leftPadding {
+    padding-left: 3%;
+}
+.promptPadding {
+    padding-top: 1%;
+}
+.leftPadding22 {
+    padding-left: 22%;
+}
+.pointer {
+    cursor: pointer;
+}

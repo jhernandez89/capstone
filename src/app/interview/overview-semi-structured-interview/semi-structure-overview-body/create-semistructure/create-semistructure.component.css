@@ -214,3 +214,10 @@ hr {
 .form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
     display: none;   
 }
+.selectedTab {
+  color: green;
+  border-bottom: 2px solid green
+}
+a {
+  cursor: pointer;
+}

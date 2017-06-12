@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CreateSemistructureComponent implements OnInit {
   confidentiality = true;
   biographicalInfo = false;
+  createQuestions = false;
   constructor() { }
 
   ngOnInit() {
@@ -15,9 +16,16 @@ export class CreateSemistructureComponent implements OnInit {
   toggleConfidentiality() {
     this.confidentiality = true;
     this.biographicalInfo = false;
+    this.createQuestions = false;
   }
   toggleBiographical() {
     this.biographicalInfo = true;
+    this.confidentiality = false;
+    this.createQuestions = false;
+  }
+  toggleQuestions() {
+    this.createQuestions = true;
+    this.biographicalInfo = false;
     this.confidentiality = false;
   }
 }
