@@ -1,3 +1,4 @@
+import { ServerService } from './server.service';
 import { UserServiceService } from './user-service.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -81,7 +82,7 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [UserServiceService],
+  providers: [UserServiceService, ServerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
