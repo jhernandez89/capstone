@@ -214,3 +214,6 @@ hr {
 .form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
     display: none;   
 }
+a {
+  cursor: pointer;
+}
