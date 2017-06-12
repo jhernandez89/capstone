@@ -27,10 +27,16 @@ import { UserBioComponent } from './userpage/profile-body/user-bio/user-bio.comp
 import { CreateProjectComponent } from './userpage/profile-body/create-project/create-project.component';
 import { FeaturedArticleComponent } from './userpage/profile-body/create-project/featured-article/featured-article.component';
 import { LowerNavComponent } from './lower-nav/lower-nav.component';
+import { FromScratchComponent } from './userpage/profile-body/from-scratch/from-scratch.component';
+import { CreateSemistructureComponent } from './interview/overview-semi-structured-interview/semi-structure-overview-body/create-semistructure/create-semistructure.component';
+import { SemistructureConfidentialityComponent } from './interview/overview-semi-structured-interview/semi-structure-overview-body/create-semistructure/semistructure-confidentiality/semistructure-confidentiality.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomepageComponent },
-  { path: 'user', component: UserpageComponent },
+  { path: 'user', component: UserpageComponent, children: [
+    { path: '', component: CreateProjectComponent },
+    { path: 'new', component: FromScratchComponent }
+  ] },
   { path: 'research', component: AllResearchComponent},
   { path: 'research/interviews', component: InterviewComponent },
   { path: 'research/interviews/semi-structured', component: OverviewSemiStructuredInterviewComponent }
@@ -61,6 +67,9 @@ const appRoutes: Routes = [
     CreateProjectComponent,
     FeaturedArticleComponent,
     LowerNavComponent,
+    FromScratchComponent,
+    CreateSemistructureComponent,
+    SemistructureConfidentialityComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,13 @@
+.paddingSpace {
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+h4 {
+    cursor: pointer;
+}
+u, h3 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

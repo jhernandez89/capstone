@@ -1,0 +1,216 @@
+.middleButtonPadding {
+  padding-left: 15%;
+}
+
+.allTypes {
+  padding-bottom: 30px;
+}
+
+.pageTitle {
+  color: #1c3d61;
+  ;
+}
+
+.watchMeFlex {
+  display: flex !important;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.formattingQuestionFlex {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.choiceButton {
+  display: flex;
+  justify-content: center;
+  ;
+}
+
+button {
+  vertical-align: text-bottom;
+}
+
+.stuffCenter {
+  align-content: center !important;
+}
+
+.alignMiddle {
+  text-align: center;
+}
+
+h5 {
+  line-height: 200%;
+}
+
+.purple {
+  color: purple;
+  font-weight: bold;
+}
+
+.red {
+  color: rgb(54.5%, 0%, 0%);
+  font-weight: bold;
+}
+
+.blue {
+  display: flex;
+  justify-content: center;
+  color: rgb(18%, 41.9%, 54.5%)
+}
+
+img {
+  float: right;
+}
+
+.questionsToConsider.h2 {
+  color: rgb(14%, 12.2%, 12.2%);
+}
+
+.marginBottom {
+  margin-bottom: 6%;
+}
+
+.questionsToConsider {
+  border: 4px solid rgb(0, 107, 107);
+  border-radius: 14px;
+}
+
+#outterVertCenter {
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+#innerVertCenter {}
+
+.bigRed {
+  color: rgb(54.5%, 0%, 0%);
+  font-weight: bold;
+}
+
+.questionDescription {
+  text-align: left;
+  float: left;
+}
+
+.tabPadding {
+  margin-right: 30vw;
+}
+
+.questionRightBorder {
+  border-top: 25px solid #1c3d61;
+  border-right: 4px solid #1c3d61;
+  border-left: 4px solid #1c3d61;
+  border-bottom: 4px solid #1c3d61;
+  float: right;
+}
+
+.questionLeftBorder {
+  border-top: 25px solid #1c3d61;
+  border-right: 4px solid #1c3d61;
+  border-left: 4px solid #1c3d61;
+  border-bottom: 4px solid #1c3d61;
+  float: left;
+  padding: 5%;
+}
+
+.float-right {
+  display: flex;
+  float: right;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.float-middle {
+  display: flex;
+  justify-content: center;
+}
+
+.blueTwo {
+  color: rgb(16, 102, 163);
+  font-weight: bold;
+}
+
+.blueNoSize {
+  color: rgb(16, 102, 163);
+  font-weight: bold;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.purpleNoSize {
+  color: purple;
+  font-weight: bold;
+}
+
+.redNoSize {
+  color: rgb(54.5%, 0%, 0%);
+  font-weight: bold;
+}
+
+.headContainer {
+  padding-left: 15%;
+  padding-right: 15%;
+  float: right;
+}
+
+.topBottomPadding {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+hr {
+  border-color: teal;
+  background-color: teal;
+}
+
+.questionPadding {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tipPadding {
+  padding: 1%;
+}
+
+.leadingQuestion {
+  padding-bottom: 2%;
+}
+
+.tabTopPadding {
+  padding: 3.2%;
+}
+
+.titleLine {
+  margin-top: 0;
+}
+.form-group input[type="checkbox"] {
+    display: none;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span {
+    width: 20px;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span:first-child {
+    display: none;
+}
+.form-group input[type="checkbox"] + .btn-group > label span:last-child {
+    display: inline-block;   
+}
+
+.form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
+    display: inline-block;
+}
+.form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
+    display: none;   
+}

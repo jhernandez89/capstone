@@ -17,6 +17,7 @@ export class ProfileBodyComponent implements OnInit {
   ethnography = false;
   caseStudy = false
   groundedTheory = false;
+  currentState = '/user'
   constructor() { }
 
   ngOnInit() {
