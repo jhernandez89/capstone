@@ -1,0 +1,77 @@
+<div class="container-fluid topPadding">
+  <div class="row paddingSpace">
+    <div class="col-sm-12 d-flex justify-content-center">
+      <h3>Research Types</h3>
+    </div>
+  </div>
+  <hr>
+  <p class="paddingSpace">Here, you can find brief descriptions of different types of research projects. If you want to dive deeper or look at the
+    sub-categories, click the 'begin' button of the corresponding tab</p>
+  <div class="row paddingSpace">
+    <div class="col-sm-12">
+      <div class="d-flex flex-row">
+        <h4 (click)="toggleInterview()">
+          <u>Interview</u>
+          <i class="fa" [ngClass]="{'fa-compress': interview, 'fa-expand': !interview}" aria-hidden="true"></i>
+
+
+        </h4>
+      </div>
+      <a class="btn btn-primary" routerLink="/research/interviews">Begin</a>
+
+      <div *ngIf="interview">
+        <p>Interviews are typically one-on-one conversations between the researcher and the participant. These can range from
+          very casual conversations (unstrutured) to very rigid coversations (structured) and somewhere in-between (semi-structured).
+          To learn more about individual types, click the button below.</p>
+        <p>Interviews are especially good when you want to explore a participant's experience. While a survey might have multiple
+          choice questions with rigid answers, interviews can dive into the participant's experiences and find out "why"</p>
+        <p>For instance, we might conduct a survey which tells us that 80% of the population support politian A over politican
+          B.
+        </p>
+        <p>The problem is, we might not have a very good idea of <i>why</i> they prefer politician A to policitan B.</p>
+        <p>This is where interiews come in. We can select 10-12 people who support politician A, and ask them why they prefer
+          that polician over the other</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="row paddingSpace">
+    <div class="col-sm-12">
+      <div class="d-flex flex-row">
+        <h4 (click)="toggleEthnography()">
+          <u>Ethnography</u>
+          <i class="fa" [ngClass]="{'fa-compress': ethnography, 'fa-expand': !ethnography}" aria-hidden="true"></i>
+        </h4>
+      </div>
+      <a class="btn btn-primary" routerLink="/research/interviews">Begin</a>
+      <div *ngIf="ethnography">
+        <p>Ethnography is the act of oberving a culture.  This used to apply primarily to larger groups of people such as entire cultures, but has since been extended to smaller cultures of people such as patreons in coffee shops, work environments, or even a monthly baseball game between friends</p>
+        <p>Ethnography is about observing people in their natural environment.  This is useful when you want to study the dynamic of interactions within groups of people.  </p>
+      </div>
+    </div>
+  </div>
+  <div class="row paddingSpace">
+    <div class="col-sm-12">
+      <div class="d-flex flex-row">
+        <h4 (click)="toggleFocusGroups()">
+          <u>Focus Groups</u>
+          <i class="fa" [ngClass]="{'fa-compress': focusGroups, 'fa-expand': !focusGroups}" aria-hidden="true"></i>
+        </h4>
+      </div>
+      <a class="btn btn-primary" routerLink="/research/interviews">Begin</a>
+      <div *ngIf="focusGroups">
+        <p>Interviews are typically one-on-one conversations between the researcher and the participant. These can range from
+          very casual conversations (unstrutured) to very rigid coversations (structured) and somewhere in-between (semi-structured).
+          To learn more about individual types, click the button below.</p>
+        <p>Interviews are especially good when you want to explore a participant's experience. While a survey might have multiple
+          choice questions with rigid answers, interviews can dive into the participant's experiences and find out "why"</p>
+        <p>For instance, we might conduct a survey which tells us that 80% of the population support politian A over politican
+          B.
+        </p>
+        <p>The problem is, we might not have a very good idea of <i>why</i> they prefer politician A to policitan B.</p>
+        <p>This is where interiews come in. We can select 10-12 people who support politician A, and ask them why they prefer
+          that polician over the other</p>
+      </div>
+    </div>
+  </div>
+</div>

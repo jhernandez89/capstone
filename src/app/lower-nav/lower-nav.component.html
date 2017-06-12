@@ -1,22 +1,19 @@
-<div class="container-fluid" *ngIf="currentState==='/research/interviews'">
+<div class="container-fluid topPadding" *ngIf="currentState==='/research/interviews'">
   <div class="row">
-    <div class="col-sm-4">
-    </div>
-    <div class="col-sm-6 d-flex flex-row justify-content-between align-items-center padding">
+
+    <div class="col-sm-12 d-flex flex-row justify-content-around align-items-center padding">
       <div class="nav-link" [class.activeTab]="userState.interviewType === 'unstructured'"><h6 class="clickable" (click)="setInterviewType('unstructured')">Unstructured</h6></div>
       <div class="nav-link" [class.activeTab]="userState.interviewType === 'semiStructured'"><h6 class="clickable" (click)="setInterviewType('semiStructured')">Semi-Structured</h6></div>
       <div class="nav-link" [class.activeTab]="userState.interviewType === 'structured'"><h6 class="clickable" (click)="setInterviewType('structured')">Structured</h6></div>
     </div>
   </div>
 </div> 
-<div class="container-fluid" *ngIf="currentState==='/research/interviews/semi-structured'">
+<div class="container-fluid topPadding" *ngIf="currentState==='/research/interviews/semi-structured'">
   <div class="row">
-    <div class="col-sm-4">
-    </div>
-    <div class="col-sm-6 d-flex flex-row justify-content-between align-items-center padding">
+    <div class="col-sm-12 d-flex flex-row justify-content-around align-items-center padding">
      <div class="nav-link" [class.activeTab]="userState.semiStructuredTabs === 'overview'"><h6 class="clickable" (click)="semiStructureType('overview')">Overview</h6></div>
       <div class="nav-link" [class.activeTab]="userState.semiStructuredTabs === 'questions'"><h6 class="clickable" (click)="semiStructureType('questions')">Questions</h6></div>
-      <div class="nav-link" [class.activeTab]="userState.semiStructuredTabs === 'other'"><h6 class="clickable" (click)="semiStructureType('other')">Other</h6></div>
+      <div class="nav-link" [class.activeTab]="userState.semiStructuredTabs === 'create'"><h6 class="clickable" (click)="semiStructureType('create')">Create</h6></div>
     </div>
   </div>
 </div>

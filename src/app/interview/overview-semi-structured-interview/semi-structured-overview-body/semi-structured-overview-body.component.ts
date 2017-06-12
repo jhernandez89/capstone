@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./semi-structured-overview-body.component.css']
 })
 export class SemiStructuredOverviewBodyComponent implements OnInit {
-  tabState = {semiStructuredTabs: 'overview'}
+  tabState = {semiStructuredTabs: 'create'}
   constructor(private userService: UserServiceService) {
     this.userService.observable.subscribe(userService => {
       this.tabState = userService;
