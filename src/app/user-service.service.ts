@@ -34,8 +34,26 @@ export class UserServiceService {
   createUser(servers: any) {
     const headers = new Headers({ 'Content-Type': 'application/json' });
     return this.http.post('http://localhost:3000/username', servers, { headers: headers })
-    .map(body => body.json())
+      .map(body => body.json())
+      .subscribe(body => {
+        const state = this.userState.getValue();
+        const updatedState = merge(state, {
+          tip: body.tip,
+          user: {
+            firstName: body.first_name,
+            lastName: body.last_name,
+            username: body.username,
+            email: body.email,
+          }
+        });
+        this.userState.next(updatedState);
+        console.log(this.userState.getValue());
+      });
+  }
+  onLogin(objectWithCredentials) {
+    this.http.post('http://localhost:3000/username/login', objectWithCredentials).map(res => res.json())
     .subscribe(body => {
+      console.log(body);
       const state = this.userState.getValue();
       const updatedState = merge(state, {
         tip: body.tip,
@@ -62,11 +80,5 @@ export class UserServiceService {
     console.log(type);
     const state = this.userState.getValue();
     this.userState.next(merge(state, { lowerNavType: type }));
-  }
-  login(objectWithCredentials) {
-    this.http.post('some url', objectWithCredentials).map(res => res.json()).subscribe(result => {
-      const state = this.userState.getValue();
-      this.userState.next(merge(state, { name: result.name }));
-    })
   }
 }

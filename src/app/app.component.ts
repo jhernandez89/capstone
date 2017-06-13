@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  login=
+  {
+    email: 'bbobert89@gmail.com',
+    password: 'IAmBobbert'
+  }
   servers=
     {
       first_name: 'Bob',
@@ -24,6 +29,9 @@ export class AppComponent {
   // }
   onSave() {
     this.userServiceService.createUser(this.servers)
+  }
+   onLogin() {
+    this.userServiceService.onLogin(this.login)
   }
   private generateId() {
     return Math.round(Math.random() * 10000);
