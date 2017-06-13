@@ -1,8 +1,7 @@
-import { ServerService } from './server.service';
 import { UserServiceService } from './user-service.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { Routes, RouterModule } from '@angular/router'
 
@@ -80,9 +79,10 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    ReactiveFormsModule
   ],
-  providers: [UserServiceService, ServerService],
+  providers: [UserServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

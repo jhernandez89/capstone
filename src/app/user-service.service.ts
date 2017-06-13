@@ -18,21 +18,21 @@ export interface User {
 
 @Injectable()
 export class UserServiceService {
-  private userState: BehaviorSubject<userState>
+  private userState: BehaviorSubject<userState>;
   constructor(private http: Http) {
     this.userState = new BehaviorSubject({
       interviewType: 'unstructured',
-      semiStructuredTabs: 'overview',
+      semiStructuredTabs: 'create',
       lowerNavType: 'profile',
       tip: true,
     });
   }
 
   get observable() {
-    return this.userState.asObservable()
+    return this.userState.asObservable();
   }
   createUser(servers: any) {
-    const headers = new Headers({ 'Content-Type': 'application/json' })
+    const headers = new Headers({ 'Content-Type': 'application/json' });
     return this.http.post('http://localhost:3000/username', servers, { headers: headers })
     .map(body => body.json())
     .subscribe(body => {
