@@ -8,7 +8,7 @@
   </div>
   <div class="row topBottomPadding ">
     <div class="col-sm-12">
-      <h5 class="d-flex justify-content-center">Welcome, Bobby</h5>
+      <h5 class="d-flex justify-content-center">Welcome,&nbsp;<span *ngIf="userState && userState.user"> {{userState.user.firstName}}</span></h5>
     </div>
   </div>
   <hr>

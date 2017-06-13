@@ -1,3 +1,4 @@
+import { UserServiceService } from './../../../user-service.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-bio.component.css']
 })
 export class UserBioComponent implements OnInit {
-
-  constructor() { }
+  userState;
+  constructor(private userServiceService: UserServiceService) { 
+    this.userServiceService.observable.subscribe(userState => {
+      this.userState = userState;
+    })
+  }
 
   ngOnInit() {
   }

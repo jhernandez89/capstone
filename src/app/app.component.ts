@@ -1,4 +1,4 @@
-import { ServerService } from './server.service';
+import { UserServiceService } from './user-service.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  servers = [
+  servers=
     {
       first_name: 'Bob',
       last_name: 'Bobbert',
@@ -15,20 +15,15 @@ export class AppComponent {
       tip: true,
       username: 'bbobbert',
       password: 'IAmBobbert'
-    },
-  ];
-  constructor(private serverService: ServerService) {}
+    }
+  constructor(private userServiceService: UserServiceService) {}
   // onAddServer(name: string) {
   //   this.servers.push({
   //     first_name: name,
   //   });
   // }
   onSave() {
-    this.serverService.storeService(this.servers)
-    .subscribe(
-      (response) => console.log(response),
-      (error) => console.log(error)
-    );
+    this.userServiceService.createUser(this.servers)
   }
   private generateId() {
     return Math.round(Math.random() * 10000);
