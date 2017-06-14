@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-semistructure.component.css']
 })
 export class CreateSemistructureComponent implements OnInit {
-  confidentiality = true;
+  confidentiality = false;
   biographicalInfo = false;
-  createQuestions = false;
+  createQuestions = true;
   constructor() { }
 
   ngOnInit() {

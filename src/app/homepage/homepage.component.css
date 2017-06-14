@@ -9,11 +9,6 @@ whiteboards {
 .btn-default {
   color: white;
 }
-/*
-body {
-  background-image: url("../../assets/images/landingBackgroundTwo.jpg");
-background-size: cover;
-}*/
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
@@ -76,7 +71,6 @@ h2 {
 }
 .myPadding {
   display: flex;
-  /*width: 80%;*/
   text-align: center;
   padding-top: 0%;
   background-image: url("../../assets/images/landingBackgroundTwo.jpg");
@@ -102,9 +96,6 @@ h2 {
   width: 15vw;
   margin-top: 4%;
   margin-right: 30%;
-  /*width: 100%;*/
-  /*height: 0;*/
-  /*padding-top: 30.64%;*/
 }
 
 .thirdBox {
@@ -127,12 +118,6 @@ h2 {
 }
 
 .fancyBackground {
-  /*height: 40vh;
-  width: 44vw;
-  margin-top: 4%;
-  margin-left: -19%;
-  overflow: hidden;
-  padding: 0;*/
   -webkit-background-size: auto 100%;
   -moz-background-size: auto 100%;
   -o-background-size: auto 100%;
@@ -186,11 +171,8 @@ hr {
   border: none;
   height: 1px;
   width: 60%;
-  /* Set the hr color */
   color: grey;
-  /* old IE */
   background-color: grey;
-  /* Modern Browsers */
 }
 .rightPadding {
   padding-right: 5%;

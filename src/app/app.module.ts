@@ -1,9 +1,11 @@
 import { UserServiceService } from './user-service.service';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { Routes, RouterModule } from '@angular/router'
+import { ToastModule } from 'ng2-toastr/ng2-toastr';
 
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -35,11 +37,13 @@ import { CreateSemistructureBiographicalComponent } from './interview/overview-s
 
 const appRoutes: Routes = [
   { path: '', component: HomepageComponent },
-  { path: 'user', component: UserpageComponent, children: [
-    { path: '', component: CreateProjectComponent },
-    { path: 'new', component: FromScratchComponent }
-  ] },
-  { path: 'research', component: AllResearchComponent},
+  {
+    path: 'user', component: UserpageComponent, children: [
+      { path: '', component: CreateProjectComponent },
+      { path: 'new', component: FromScratchComponent }
+    ]
+  },
+  { path: 'research', component: AllResearchComponent },
   { path: 'research/interviews', component: InterviewComponent },
   { path: 'research/interviews/semi-structured', component: OverviewSemiStructuredInterviewComponent }
 
@@ -76,6 +80,8 @@ const appRoutes: Routes = [
     CreateSemistructureBiographicalComponent,
   ],
   imports: [
+    BrowserAnimationsModule,
+    ToastModule.forRoot(),
     BrowserModule,
     FormsModule,
     HttpModule,

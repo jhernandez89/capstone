@@ -14,6 +14,5 @@ lowerNavState = {lowerNavType: 'profile'}
   }
   setNavType(type) {
     this.userStateService.setNavbarType(type)
-    console.log(type);
   }
 }

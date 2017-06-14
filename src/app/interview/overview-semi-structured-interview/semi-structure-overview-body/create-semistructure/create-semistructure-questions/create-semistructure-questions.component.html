@@ -6,14 +6,16 @@
     </div>
   </div>
 </div>
-<div class="container-fluid" [formGroup]="formArray">
-  <div class="row" *ngFor="let question of formArray.controls; let i = index">
-    <div class="col-sm-8">
-      <textarea class="form-control" [formControlName]="i" [formGroupName]="i"></textarea>
+<div class="container" [formGroup]="formG">
+  <div class="row">
+    <input type="text" class="form-control" formControlName="projectTitle">
+  </div>
+  <div formArrayName="questions">
+    <div class="row form-inline" *ngFor="let question of formArray.controls; let i = index">
+      <textarea class="form-control" [formControlName]="i"></textarea>
+      <button (click)="removeQuestion(i)" class="btn btn-secondary">Remove</button>
     </div>
-    <div class="col-sm-4">
-    </div>
-      <button class="btn btn-primary" (click)="removeQuestion(i)"></button>
   </div>
 </div>
-<button class="btn btn-primary" (click)="addQuestion()"></button>
+<button (click)="addQuestion()" class="btn btn-secondary">Add</button>
+<button (click)="postQuestions()" class="btn btn-primary">Submit</button>

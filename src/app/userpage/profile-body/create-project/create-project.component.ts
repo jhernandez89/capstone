@@ -16,7 +16,14 @@ export class CreateProjectComponent implements OnInit {
   caseStudy = false
   groundedTheory = false;
   allOrSome = false;
-  constructor(private userStateService: UserServiceService) { }
+  userState = {
+    projects: [],
+  };
+  constructor(private userStateService: UserServiceService) { 
+    this.userStateService.observable.subscribe(userState => {
+      this.userState = userState;
+    })
+  }
 
   ngOnInit() {
   }

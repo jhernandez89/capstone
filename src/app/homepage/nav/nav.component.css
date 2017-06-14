@@ -71,3 +71,7 @@
 a {
   font-size: 90%;
 }
+.rightPadding {
+  padding-right: 17%;
+  color: white;
+}

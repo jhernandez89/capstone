@@ -20,7 +20,6 @@ export class LowerNavComponent implements OnInit {
   ngOnInit() {
   }
   setInterviewType(type) {
-    console.log(type);
     this.userStateService.setInterviewTypes(type)
   }
   semiStructureType(type) {
