@@ -28,7 +28,7 @@
       <div formArrayName="questions">
         <div class="row form-inline">
           <textarea rows="4" cols="50" class="form-control" [formControlName]="i"></textarea>
-          <button (click)="removeQuestion(i)" class="btn btn-secondary">Remove</button>
+          <button (click)="removeQuestion(i)" class="btn btn-secondary removeButton">Remove</button>
         </div>
       </div>
     </div>
@@ -37,5 +37,5 @@
     </div>
   </div>
 </div>
-<button (click)="addQuestion()" class="btn btn-secondary">Add</button>
-<button (click)="postQuestions()" class="btn btn-primary">Submit</button>
+<button (click)="addQuestion()" class="btn btn-secondary buttonPadding">Add</button>
+<button (click)="postQuestions()" class="btn btn-primary buttonPadding">Submit</button>

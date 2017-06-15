@@ -25,3 +25,10 @@
 .topPadding {
     padding-top: 6%;
 }
+.buttonPadding {
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+.removeButton {
+    margin-left: 10px;
+}

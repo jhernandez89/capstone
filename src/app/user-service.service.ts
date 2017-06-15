@@ -49,7 +49,7 @@ export class UserServiceService {
   }
   createUser(servers: any) {
     const headers = new Headers({ 'Content-Type': 'application/json' });
-    return this.http.post(`${Config.apiUrl}username`, servers, Config.authCredentials)
+    return this.http.post(`https://arcane-crag-22252.herokuapp.com/username`, servers, Config.authCredentials)
       .map(body => body.json())
       .subscribe(this.assignUser.bind(this));
   }

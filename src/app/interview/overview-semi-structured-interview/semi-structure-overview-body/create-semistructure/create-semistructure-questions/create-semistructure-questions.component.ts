@@ -16,7 +16,7 @@ export class CreateSemistructureQuestionsComponent implements OnInit {
   public formArray: FormArray;
   tips = [
     'Question 1: We recommend making your first question open-ended and comfortable for the participant to answer.  Easing your participant into your chosen topic in a comfortable manner can lead to comfortable conversation throughout the interview.',
-    'Question 2: It might be a good idea to start with simplier questions and progress to more complex ones later in the interview'
+    'Question 2: It might be a good idea to start with simpler questions and progress to more complex ones later in the interview'
   ]
   constructor(private fb: FormBuilder, private http: Http, public toastr: ToastsManager, vcr: ViewContainerRef, private userStateService: UserServiceService) {
     this.toastr.setRootViewContainerRef(vcr);
