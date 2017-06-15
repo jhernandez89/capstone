@@ -34,7 +34,7 @@ export class CreateSemistructureQuestionsComponent implements OnInit {
     this.formG = this.fb.group({
       projectTitle: this.fb.control(''),
       questions: this.formArray,
-      sub_type_id: 2,
+      sub_type_id: 1,
       type_id: 1,
     });
   }
