@@ -75,3 +75,6 @@ a {
   padding-right: 17%;
   color: white;
 }
+.btn {
+  cursor: pointer;
+}

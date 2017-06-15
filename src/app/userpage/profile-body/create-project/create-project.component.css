@@ -16,3 +16,12 @@ ul {
 a {
   cursor: pointer;
 }
+/*.myBorder {
+  border: 2px solid red
+}*/
+.verticalLine {
+  height: 50vh;
+  border-left: 1px solid grey;
+  width: 2px;
+  padding-right: 5%;
+}

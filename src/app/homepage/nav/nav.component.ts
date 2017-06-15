@@ -18,11 +18,14 @@ export class NavComponent implements OnInit {
     this.userServiceService.observable.subscribe(userState => {
       this.userState = userState
     })
-   }
+  }
 
   ngOnInit() {
   }
   logout() {
     this.userServiceService.onLogOut()
+  }
+  onLogin() {
+    this.userServiceService.onLogin(this.login)
   }
 }

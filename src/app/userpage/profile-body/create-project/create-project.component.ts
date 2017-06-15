@@ -22,6 +22,8 @@ export class CreateProjectComponent implements OnInit {
   constructor(private userStateService: UserServiceService) { 
     this.userStateService.observable.subscribe(userState => {
       this.userState = userState;
+      console.log(userState.projects);
+      
     })
   }
 

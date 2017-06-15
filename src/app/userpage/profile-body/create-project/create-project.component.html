@@ -5,12 +5,83 @@
     </div>
   </div>
   <hr>
-  <div class="row paddingSpace">
+  <div class="row paddingSpace d-flex flex-row">
     <div class="col-sm-5">
-      <img class="img-fluid" src="../../assets/images/booksAndBoxes.jpg" alt="bookShelves">
-      <h6>"If we were knew what we were doing it wouldn't be called research"</h6>
+      <div class="container myBorder">
+        <form class="form-horizontal" role="form" method="POST" action="/register">
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <h2>Register New User</h2>
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 field-label-responsive">
+              <label for="name">Name</label>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                  <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="John Doe" required autofocus>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 field-label-responsive">
+              <label for="email">E-Mail Address</label>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                  <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
+                  <input type="text" name="email" class="form-control" id="email" placeholder="you@example.com" required autofocus>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 field-label-responsive">
+              <label for="password">Password</label>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                  <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
+                  <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 field-label-responsive">
+              <label for="password">Confirm Password</label>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                  <div class="input-group-addon" style="width: 2.6rem">
+                    <i class="fa fa-repeat"></i>
+                  </div>
+                  <input type="password" name="password-confirmation" class="form-control" id="password-confirm" placeholder="Password" required>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <button type="submit" class="btn btn-success"><i class="fa fa-user-plus"></i> Register</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="col-sm-7">
+                     <div class="verticalLine d-flex flex-row"></div>
+
+    <div class="col-sm-6">
       <h4 class="d-flex justify-content-center">Get started!</h4>
       <p>Choose form one of the research categories below or get started from scratch</p>
       <div class="container-fluid">
@@ -164,6 +235,197 @@
 </div>
 
 
-<div *ngFor="let project of userState.projects">
-  <span>{{ project.name }}</span>
+<div class="container-fluid">
+  <div class="row paddingSpace">
+    <div class="col-sm-12 d-flex justify-content-center">
+      <h3>Jump back into a project or start a new one</h3>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-7">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <h4 class="d-flex justify-content-center">Projects</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-7">
+            Name
+          </div>
+          <div class="col-sm-5">
+            Type
+          </div>
+        </div>
+        <hr>
+        <div class="row" *ngFor="let project of userState.projects">
+          <div class="col-sm-7">
+            <div>
+              <p> {{project.name}}:</p>
+              <button class="btn btn-primary">Edit</button>
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div>
+              <p> {{project.interview_type}} {{project.type}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-5">
+      <h4 class="d-flex justify-content-center">Get started!</h4>
+      <p>Choose form one of the research categories below or get started from scratch</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 d-flex justify-content-center">
+            <a routerLink="/user/new" class="btn btn-default personalizedButton">From scartch</a>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div *ngIf="!allOrSome">
+                    <ul>
+                      <div class="bulletPoints">
+                        <a class="newProjectLinks d-flex flex-row" (click)="toggleNarrative()">
+                          <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                          <li>
+                          &nbsp; &nbsp; Narratives &nbsp;
+                          </li>
+                          <div class="expandCategories">
+                            <i class="fa fa-plus-square" aria-hidden="true"></i>
+                          </div>
+                        </a>
+                      </div>
+                      <div *ngIf="narrative">
+                        <ul class="subFastTrackCategories">
+                          <div>
+                            <a routerLink="/research/interviews">
+                              <li class="fa fa-rocket"> Interview</li>
+                            </a>
+                          </div>
+                          <br>
+                          <div>
+                            <li class="fa fa-rocket"> Written word</li>
+                          </div>
+                        </ul>
+                        <br>
+                        <br>
+                      </div>
+                      <div class="bulletPoints">
+                        <a class="newProjectLinks d-flex flex-row" (click)="toggleEthnography()">
+                        <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                        <li>
+                          &nbsp; &nbsp; Ethnography &nbsp;
+                        </li>
+                        <div class="expandCategories">
+                          <i class="fa fa-plus-square" aria-hidden="true"></i>
+                        </div>
+                        </a>
+                      </div>
+                      <div *ngIf="ethnography">
+                        <ul class="subFastTrackCategories">
+                          <li class="fa fa-rocket"> Interview</li>
+                          <br>
+                          <li class="fa fa-rocket"> Written word</li>
+                        </ul>
+                        <br>
+                        <br>
+                      </div>
+                      <div class="bulletPoints">
+                        <a class="newProjectLinks d-flex flex-row" (click)="togglePhenomenology()">
+                      <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                        <li>
+
+                          &nbsp; &nbsp; Phenomenology &nbsp;
+                        </li>
+                        <div class="expandCategories">
+                          <i class="fa fa-plus-square" aria-hidden="true"></i>
+                        </div>
+                      </a>
+                      </div>
+                      <div *ngIf="phenomenology">
+                        <ul class="subFastTrackCategories">
+                          <li class="fa fa-rocket"> Interview</li>
+                          <br>
+                          <li class="fa fa-rocket"> Written word</li>
+                        </ul>
+                        <br>
+                        <br>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div *ngIf="!allOrSome">
+                    <ul>
+                      <div class="bulletPoints" (click)="toggleGroundedTheory()">
+                        <a class="newProjectLinks d-flex flex-row">
+                      <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                      <li>
+
+                        &nbsp; &nbsp; Grounded Theory &nbsp;
+                      </li>
+                      <div class="expandCategories">
+                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                      </div>
+                      </a>
+                      </div>
+                      <div *ngIf="groundedTheory">
+                        <ul class="subFastTrackCategories">
+                          <li class="fa fa-rocket"> Interview</li>
+                          <br>
+                          <li class="fa fa-rocket"> Written word</li>
+                        </ul>
+                        <br>
+                        <br>
+                      </div>
+                      <div class="bulletPoints" (click)="toggleCaseStudy()">
+                        <a class="newProjectLinks d-flex flex-row">
+                      <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                      <li>
+
+                        &nbsp; &nbsp; Case Study &nbsp;
+                      </li>
+                      <div class="expandCategories">
+                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                      </div>
+                      </a>
+                      </div>
+                      <div *ngIf="caseStudy">
+                        <ul class="subFastTrackCategories">
+                          <li class="fa fa-rocket"> Interview</li>
+                          <br>
+                          <li class="fa fa-rocket"> Written word</li>
+                        </ul>
+                        <br>
+                        <br>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row featuredArticle">
+    <app-featured-article></app-featured-article>
+  </div>
 </div>
+<!--<div *ngFor="let project of userState.projects">
+  <span>{{ project.name }}</span>
+</div>-->

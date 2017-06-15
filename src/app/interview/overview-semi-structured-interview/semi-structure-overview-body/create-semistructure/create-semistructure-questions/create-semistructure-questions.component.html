@@ -2,18 +2,38 @@
   <div class="row">
     <div class="col-sm-12">
       <h4 class="d-flex justify-content-center">Time to start making questions</h4>
-      <p>Here you can begin to write your questions. We'll save them for you and build your quesitonare using this and your biographical questions</p>
+      <p>Here you can begin to write your questions. We'll save them for you and build your quesitonare using this and your
+        demographic questions</p>
     </div>
   </div>
 </div>
-<div class="container" [formGroup]="formG">
+<div class="container topPadding" [formGroup]="formG">
   <div class="row">
-    <input type="text" class="form-control" formControlName="projectTitle">
+    <div class="col-sm-12">
+      <div class="flex-column rightLeftPadding">
+        <h4 class="d-flex justify-content-center">Project Title</h4>
+        <input type="text" class="form-control d-flex justify-content-center" formControlName="projectTitle">
+      </div>
+    </div>
   </div>
-  <div formArrayName="questions">
-    <div class="row form-inline" *ngFor="let question of formArray.controls; let i = index">
-      <textarea class="form-control" [formControlName]="i"></textarea>
-      <button (click)="removeQuestion(i)" class="btn btn-secondary">Remove</button>
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Note: We'll give you suggestions for each question, but remember each project is unique, and the flow that works best for you might be very different.  For instance, we suggest you make the first question a soft question, however, you might want to make your first question a hard-hitting if it fits your purposes better.  This is absolutely okay!  Try not to only think about questions individually, but the flow of question as well.</p>
+    </div>
+  </div>
+  <hr>
+  <div class="row" *ngFor="let question of formArray.controls; let i = index">
+    <div class="col-sm-7">
+      <h5>Questions</h5>
+      <div formArrayName="questions">
+        <div class="row form-inline">
+          <textarea rows="4" cols="50" class="form-control" [formControlName]="i"></textarea>
+          <button (click)="removeQuestion(i)" class="btn btn-secondary">Remove</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-5">
+      <p>{{tips[i]}}</p>
     </div>
   </div>
 </div>
