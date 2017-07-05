@@ -19,11 +19,16 @@ export class CreateProjectComponent implements OnInit {
   userState = {
     projects: [],
   };
-  constructor(private userStateService: UserServiceService) { 
+  newUser = {
+    name: '',
+    email: '',
+    password: '',
+    confirmPassword: ''
+  }
+  constructor(private userStateService: UserServiceService, private userServiceService: UserServiceService) { 
     this.userStateService.observable.subscribe(userState => {
       this.userState = userState;
       console.log(userState.projects);
-      
     })
   }
 
@@ -32,6 +37,9 @@ export class CreateProjectComponent implements OnInit {
   allCurrentProjects() {
     this.currentAllOrSome = false;
     this.toggleCurrentProjects = true;
+  }
+  createUser() {
+    this.userServiceService.createUser(this.newUser)
   }
   toggleNarrative() {
     if (this.narrative) {

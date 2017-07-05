@@ -11,8 +11,8 @@ export class NavComponent implements OnInit {
   username = '';
   password = '';
   login = {
-    email: 'bbobert89@gmail.com',
-    password: 'IAmBobbert'
+    email: '',
+    password: ''
   }
   constructor(private userServiceService: UserServiceService) {
     this.userServiceService.observable.subscribe(userState => {

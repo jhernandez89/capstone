@@ -24,11 +24,13 @@
               <div class="form-group">
                 <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                   <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="John Doe" required autofocus>
+                  <input type="text" name="name" [(ngModel)]="newUser.name" class="form-control" id="name" placeholder="John Doe" required
+                    autofocus>
                 </div>
               </div>
             </div>
           </div>
+          <h3>{{newUser.name}} {{newUser.email}} {{newUser.password}} {{newUser.confirmPassword}}</h3>
           <div class="row">
             <div class="col-md-3 field-label-responsive">
               <label for="email">E-Mail Address</label>
@@ -37,7 +39,8 @@
               <div class="form-group">
                 <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                   <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
-                  <input type="text" name="email" class="form-control" id="email" placeholder="you@example.com" required autofocus>
+                  <input type="text" name="email" [(ngModel)]="newUser.email" class="form-control" id="email" placeholder="you@example.com"
+                    required autofocus>
                 </div>
               </div>
             </div>
@@ -50,7 +53,8 @@
               <div class="form-group">
                 <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                   <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
-                  <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
+                  <input type="password" name="password" [(ngModel)]="newUser.password" class="form-control" id="password" placeholder="Password"
+                    required>
                 </div>
               </div>
             </div>
@@ -65,7 +69,8 @@
                   <div class="input-group-addon" style="width: 2.6rem">
                     <i class="fa fa-repeat"></i>
                   </div>
-                  <input type="password" name="password-confirmation" class="form-control" id="password-confirm" placeholder="Password" required>
+                  <input type="password" name="password-confirmation" [(ngModel)]="newUser.confirmPassword" class="form-control" id="password-confirm"
+                    placeholder="Password" required>
                 </div>
               </div>
             </div>
@@ -79,8 +84,7 @@
         </form>
       </div>
     </div>
-                     <div class="verticalLine d-flex flex-row"></div>
-
+    <div class="verticalLine d-flex flex-row"></div>
     <div class="col-sm-6">
       <h4 class="d-flex justify-content-center">Get started!</h4>
       <p>Choose form one of the research categories below or get started from scratch</p>

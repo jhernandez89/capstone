@@ -9,17 +9,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   login=
   {
-    email: 'bbobert89@gmail.com',
-    password: 'IAmBobbert'
+    email: '',
+    password: ''
   }
   servers=
     {
-      first_name: 'Bob',
-      last_name: 'Bobbert',
-      email: 'bbobert89@gmail.com',
+      first_name: '',
+      last_name: '',
+      email: '',
       tip: true,
-      username: 'bbobbert',
-      password: 'IAmBobbert'
+      username: '',
+      password: ''
     }
   constructor(private userServiceService: UserServiceService) {}
   // onAddServer(name: string) {

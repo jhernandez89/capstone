@@ -20,10 +20,10 @@
     <!--<div>{{areLoggedIn}}</div>-->
     <form class="form-inline my-2 my-lg-0" *ngIf="!userState.user">
       <div class="form-group">
-        <input type="text" class="form-control" name="username" placeholder="Username">
+        <input type="text" [(ngModel)]="login.email" class="form-control" name="username" placeholder="Username">
       </div>
       <div class="form-group">
-        <input type="password" class="form-control" name="password" placeholder="Password">
+        <input type="password" [(ngModel)]="login.password" class="form-control" name="password" placeholder="Password">
       </div>
       <button (click)="onLogin()" routerLink="/user" type="submit" class="btn btn-primary">Sign In</button>
     </form>
