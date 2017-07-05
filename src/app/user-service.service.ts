@@ -48,6 +48,7 @@ export class UserServiceService {
     return this.userState.asObservable();
   }
   createUser(servers: any) {
+    console.log('hello!');
     const headers = new Headers({ 'Content-Type': 'application/json' });
     return this.http.post(`https://arcane-crag-22252.herokuapp.com/username`, servers, Config.authCredentials)
       .map(body => body.json())

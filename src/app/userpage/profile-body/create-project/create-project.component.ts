@@ -41,7 +41,7 @@ export class CreateProjectComponent implements OnInit {
     this.toggleCurrentProjects = true;
   }
   createUser() {
-    this.userServiceService.createUser(this.newUser)
+    this.userServiceService.createUser(this.newUser);
   }
   toggleNarrative() {
     if (this.narrative) {
