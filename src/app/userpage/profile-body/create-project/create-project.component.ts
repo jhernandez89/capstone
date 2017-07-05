@@ -20,10 +20,12 @@ export class CreateProjectComponent implements OnInit {
     projects: [],
   };
   newUser = {
-    name: '',
+    first_name: '',
+    last_name: '',
     email: '',
-    password: '',
-    confirmPassword: ''
+    tip: true,
+    username: '',
+    password: ''
   }
   constructor(private userStateService: UserServiceService, private userServiceService: UserServiceService) { 
     this.userStateService.observable.subscribe(userState => {
