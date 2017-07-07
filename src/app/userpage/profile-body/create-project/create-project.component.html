@@ -1,4 +1,4 @@
-<div class="container-fluid" *ngIf="userState.projects.length === 0">
+<div class="container-fluid" *ngIf="!userState.user">
   <div class="row paddingSpace">
     <div class="col-sm-12 d-flex justify-content-center">
       <h3>You haven't created any projects yet!</h3>
@@ -250,7 +250,7 @@
 </div>
 
 
-<div class="container-fluid">
+<div class="container-fluid" *ngIf="userState && userState.user">
   <div class="row paddingSpace">
     <div class="col-sm-12 d-flex justify-content-center">
       <h3>Jump back into a project or start a new one</h3>
