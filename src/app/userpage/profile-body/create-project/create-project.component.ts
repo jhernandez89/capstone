@@ -16,9 +16,8 @@ export class CreateProjectComponent implements OnInit {
   caseStudy = false
   groundedTheory = false;
   allOrSome = false;
-  userState = {
-    projects: [],
-  };
+  userName = false;
+  userState;
   newUser = {
     first_name: '',
     last_name: '',
@@ -30,7 +29,7 @@ export class CreateProjectComponent implements OnInit {
   constructor(private userStateService: UserServiceService, private userServiceService: UserServiceService) { 
     this.userStateService.observable.subscribe(userState => {
       this.userState = userState;
-      console.log(userState.projects);
+      console.log(userState);
     })
   }
 
@@ -42,6 +41,7 @@ export class CreateProjectComponent implements OnInit {
   }
   createUser() {
     this.userServiceService.createUser(this.newUser);
+    this.userName = true;
   }
   toggleNarrative() {
     if (this.narrative) {

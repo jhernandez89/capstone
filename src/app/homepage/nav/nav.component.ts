@@ -16,7 +16,7 @@ export class NavComponent implements OnInit {
   }
   constructor(private userServiceService: UserServiceService) {
     this.userServiceService.observable.subscribe(userState => {
-      this.userState = userState
+      this.userState = userState;
     })
   }
 
