@@ -34,6 +34,7 @@ import { CreateSemistructureComponent } from './interview/overview-semi-structur
 import { SemistructureConfidentialityComponent } from './interview/overview-semi-structured-interview/semi-structure-overview-body/create-semistructure/semistructure-confidentiality/semistructure-confidentiality.component';
 import { CreateSemistructureQuestionsComponent } from './interview/overview-semi-structured-interview/semi-structure-overview-body/create-semistructure/create-semistructure-questions/create-semistructure-questions.component';
 import { CreateSemistructureBiographicalComponent } from './interview/overview-semi-structured-interview/semi-structure-overview-body/create-semistructure/create-semistructure-biographical/create-semistructure-biographical.component';
+import { AdaptiveComponent } from './adaptive/adaptive.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomepageComponent },
@@ -78,6 +79,7 @@ const appRoutes: Routes = [
     SemistructureConfidentialityComponent,
     CreateSemistructureQuestionsComponent,
     CreateSemistructureBiographicalComponent,
+    AdaptiveComponent,
   ],
   imports: [
     BrowserAnimationsModule,
